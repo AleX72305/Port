@@ -1,0 +1,178 @@
+header {
+	padding: 40px 0 40px 0;
+	border-bottom: 1px solid green;
+	ul {
+		display: flex;
+		justify-content: flex-end;
+		li {
+			&:not(:last-child) {
+				margin-right: 40px;
+			}
+			a {
+				transition: $transition;
+				text-transform: uppercase;
+				@include Montserrat();
+				&:hover {
+					color: green;
+					transition: $transition;
+				}
+			}
+		}
+	}
+}
+
+.about-us {
+	margin-top: 60px;
+	margin-bottom: 160px;
+	.about-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.about-us-left {
+			.name {
+				font-size: 35px;
+				font-weight: bold;
+				line-height: 40px;
+				@include Montserrat();
+				color: #fff;
+				margin-bottom: 40px;
+			}
+		}
+		.about-us-right {
+			img {
+				width: 650px;
+				height: 650px;
+				border-radius: 50%;
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+	}
+}
+
+.about {
+	margin-bottom: 160px;
+	.about-content {
+		text-align: center;
+		.about-title {
+			font-size: 35px;
+			font-weight: bold;
+			line-height: 40px;
+			@include Montserrat();
+			color: #fff;
+			margin-bottom: 40px;
+		}
+		p {
+			font-size: 16px;
+			line-height: 30px;
+			width: 740px;
+			margin: 0 auto;
+			@include Montserrat();
+			color: #fff;
+		}
+	}
+	.my-scills {
+		margin-top: 40px;
+		display: flex;
+		justify-content: space-around;
+		.scills-block {
+			text-align: center;
+			img {
+				margin-bottom: 10px;
+			}
+			p {
+				color: green;
+				@include Montserrat();
+			}
+		}
+	}
+}
+
+.my-project {
+	margin-bottom: 160px;
+	.project-title {
+		text-align: center;
+		font-size: 35px;
+		font-weight: bold;
+		line-height: 40px;
+		@include Montserrat();
+		color: #fff;
+		margin-bottom: 40px;
+	}
+	.project-blocks {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		.project-dlock {
+			align-items: flex-start;
+			display: flex;
+			height: 350px;
+			justify-content: space-between;
+			width: 32%;
+			position: relative;
+			margin-bottom: 20px;
+			transition: $transition;
+			display: block;
+			&:hover {
+				transition: $transition;
+				opacity: 0.5;
+			}
+			img {
+				border-radius: 8px;
+				height: 350px;
+				object-position: center;
+				left: 0;
+				object-fit: cover;
+				top: 0;
+				transition: all 0.3s ease;
+				width: 100%;
+			}
+			span {
+				display: none;
+				position: absolute;
+				bottom: 30px;
+				left: 30px;
+				font-size: 18px;
+				transition: $transition;
+				@include Montserrat();
+				&:hover {
+					transition: $transition;
+					color: green;
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+footer {
+	margin-bottom: 60px;
+	border-top: 2px solid green;
+	padding-top: 60px;
+	.block-footer {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 40px;
+		.seti {
+			text-transform: uppercase;
+			a {
+				transition: $transition;
+				&:hover {
+					color: green;
+					transition: $transition;
+				}
+				&:not(:last-child) {
+					margin-right: 40px;
+				}
+			}
+		}
+		.author {
+			color: #fff;
+		}
+	}
+	.authority {
+		display: flex;
+		justify-content: center;
+		color: #fff;
+	}
+}
